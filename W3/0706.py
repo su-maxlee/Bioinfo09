@@ -204,6 +204,7 @@ for i in range(len(seq)):
     #if s =='TT':
        # print(i)
 '''
+'''
 #31 문자열 리스트로 바꾸기 
 a='AA,AC,AG,AT'
 l_a=a.split(',')
@@ -225,7 +226,7 @@ for i in l_q35:
         d_q35[i]=0
     d_q35[i]+=1
 print(d_q35)
-
+'''
 
 
 
