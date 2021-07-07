@@ -67,15 +67,27 @@
 #         print(chrome, length)
 
 
-data = dict()
-idx = 1
-with open("077.bed") as handle:
-    for line in handle:
-        chrom, start, end = line.strip().split("\t")
-        length = int(end) - int(start)
-        if chrom not in data:
-            data[chrom] = dict()
-        data[chrom][str(idx)] = length
-        idx += 1
-print(data)
-print(data["chr21"]["10"])
+# data = dict()
+# idx = 1
+# with open("077.bed") as handle:
+#     for line in handle:
+#         chrom, start, end = line.strip().split("\t")
+#         length = int(end) - int(start)
+#         if chrom not in data:
+#             data[chrom] = dict()
+#         data[chrom][str(idx)] = length
+#         idx += 1
+# print(data)
+# print(data["chr21"]["40"])
+
+
+def fib(n):
+    if n == 0:
+        return 0
+    elif n == 1:
+        return 1
+    else:
+        return fib(n - 2) + fib(n - 1)
+
+
+print(fib(9))
