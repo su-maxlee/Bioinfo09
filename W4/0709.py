@@ -153,7 +153,7 @@ for i in range(0, len(s_seq) - 2, 3):
     l_codon.append(s_seq[i : i + 3])
 
 for i in range(len(l_codon)):
-    # print(l_codon[i] + "   " + codon_dic[l_codon[i]])
+    print(l_codon[i] + "   " + codon_dic[l_codon[i]])
     # print(l_codon[i], end="")
-    print(codon_dic[l_codon[i]], end="  ")
+    # print(codon_dic[l_codon[i]], end="  ")
 
