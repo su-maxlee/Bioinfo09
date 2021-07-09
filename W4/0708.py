@@ -154,17 +154,17 @@
 #     print(l[1])
 
 # 3.6
-# seq = []
-# with open("sequence2.fasta") as handle:
-#     for lines in handle:
-#         line = lines.strip()
-#         if line.startswith(">"):
-#             title = line
-#         else:
-#             seq =
-
-# print("title:", title)
-# print("seq:", seq)
+seq = []
+with open("sequence2.fasta") as handle:
+    for lines in handle:
+        line = lines.strip()
+        if line.startswith(">"):
+            title = line
+        elif line.isalpha():
+            seq.append(line)
+        seq1 = "".join(seq)
+print("title:", title)
+print("seq:", seq1)
 
 # 3.6 answer
 # fr = open("sequence2.fasta")
@@ -192,7 +192,7 @@
 #         break
 #     else:
 #         a = int(i)
-#     print(f"Three amino acids: ", seq[a : a + 3])
+#     print(f"Three amino acids: ", seq1[a : a + 3])
 
 # find = list()
 # c = 0
@@ -202,8 +202,8 @@
 #         print("Okay I will stop")
 #         break
 #     else:
-#         for c in range(len(seq)):
-#             if seq[c] == b:
+#         for c in range(len(seq1)):
+#             if seq1[c] == b:
 #                 find.append(c + 1)
 #     print(find)
 #     find = list()
@@ -223,7 +223,7 @@ with open("sequence.gp") as handle:
         if line.startswith("//"):
             break
 seq = "\n".join(seq)
-# print(seq)
+# # print(seq)
 # 4.2
 l_tmp = list()
 tmp = seq.split()
@@ -242,8 +242,8 @@ for i in range(len(tmp)):
 # l_tmp = "".join(l_tmp)
 # print("seq: ", l_tmp)
 
-# 4.3
-a_tmp = l_tmp[:7:1]
-a_tmp = "".join(a_tmp)
-print(a_tmp)
-print(len(a_tmp))
+# # 4.3
+# a_tmp = l_tmp[:7:1]
+# a_tmp = "".join(a_tmp)
+# print(a_tmp)
+# print(len(a_tmp))
